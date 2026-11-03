@@ -1,4 +1,4 @@
-package in.gov.sci.monitor
+package gov.sci.monitor
 
 import android.Manifest
 import android.content.Context

@@ -1,8 +1,9 @@
-package in.gov.sci.monitor
+package gov.sci.monitor
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.*
+import okhttp3.HttpUrl.Companion.toHttpUrl
 import org.json.JSONObject
 import org.jsoup.Jsoup
 import java.io.IOException
@@ -212,7 +213,7 @@ object SciScraper {
 
         // 1. Initial request to prime session
         try {
-            val primeUrl = HttpUrl.parse(AJAX_URL)!!.newBuilder()
+            val primeUrl = AJAX_URL.toHttpUrl().newBuilder()
                 .addQueryParameter("action", "get_case_details")
                 .addQueryParameter("diary_no", diaryNo)
                 .addQueryParameter("diary_year", diaryYear)
@@ -234,7 +235,7 @@ object SciScraper {
 
         // 2. Fetch judgement_orders tab
         try {
-            val ordersUrl = HttpUrl.parse(AJAX_URL)!!.newBuilder()
+            val ordersUrl = AJAX_URL.toHttpUrl().newBuilder()
                 .addQueryParameter("action", "get_case_details")
                 .addQueryParameter("diary_no", diaryNo)
                 .addQueryParameter("diary_year", diaryYear)

@@ -1,4 +1,4 @@
-package in.gov.sci.monitor
+package gov.sci.monitor
 
 import android.app.Service
 import android.content.Context
@@ -14,8 +14,8 @@ import java.util.*
 class MonitorService : Service() {
 
     companion object {
-        const val ACTION_START = "in.gov.sci.monitor.ACTION_START"
-        const val ACTION_STOP = "in.gov.sci.monitor.ACTION_STOP"
+        const val ACTION_START = "gov.sci.monitor.ACTION_START"
+        const val ACTION_STOP = "gov.sci.monitor.ACTION_STOP"
         const val CHECK_INTERVAL_MS = 120_000L // 120 seconds
 
         val isRunningFlow = MutableStateFlow(false)

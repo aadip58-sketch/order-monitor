@@ -1,4 +1,4 @@
-package in.gov.sci.monitor
+package gov.sci.monitor
 
 data class CaseItem(
     val id: Int,

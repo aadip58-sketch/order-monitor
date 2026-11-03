@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "in.gov.sci.monitor"
+    namespace = "gov.sci.monitor"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "in.gov.sci.monitor"
+        applicationId = "gov.sci.monitor"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

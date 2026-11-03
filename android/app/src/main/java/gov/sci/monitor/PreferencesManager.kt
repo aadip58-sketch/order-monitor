@@ -1,4 +1,4 @@
-package in.gov.sci.monitor
+package gov.sci.monitor
 
 import android.content.Context
 import android.content.SharedPreferences
