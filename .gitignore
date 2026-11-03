@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.png
+debug_response.json
+
+# macOS
+.DS_Store
+
+# Android / Gradle
+.gradle/
+build/
+android/app/build/
+android/.gradle/
+local.properties
+*.apk
+*.aab

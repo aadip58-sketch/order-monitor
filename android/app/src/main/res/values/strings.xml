@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SCI Case Monitor</string>
+    <string name="start_monitoring">Start Monitoring</string>
+    <string name="stop_monitoring">Stop Monitoring</string>
+    <string name="monitoring_active">Monitoring Active (every 120s)</string>
+    <string name="monitoring_stopped">Monitoring Stopped</string>
+</resources>
